@@ -66,6 +66,12 @@ class _MyHomePageState extends State<MyHomePage> {
         child: Column(
           children: <Widget>[
             const SearchBar(),
+            Image.network(
+              'https://media.istockphoto.com/id/636437814/photo/fifty-percent-discount.webp?b=1&s=170667a&w=0&k=20&c=OCBd46kWSLGgZ4vH5rTJwz612ch-4HK-5YFvVaAGGxw=',
+              fit: BoxFit.cover,
+              height: 200,
+              width: double.infinity,
+            ),
             Expanded(
               child: ListView.separated(
                 itemCount: demoModel.dummyFoodList.length,
